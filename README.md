@@ -18,7 +18,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    Include in your controller
+
+    ```ruby
+        class ApplicationController < ActionController::Base
+          include EasyAuth
+          before_filter :easy_authenticate!
+        end
+    ```
 
 ## Contributing
 
