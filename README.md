@@ -6,7 +6,7 @@ An easy(ish) way to use API tokens in your services
 
 Add this line to your application's Gemfile:
 
-    gem 'easy_auth'
+    gem 'ez_auth', :require => "easy_auth"
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install easy_auth
+    $ gem install ez_auth
 
 ## Usage
 
