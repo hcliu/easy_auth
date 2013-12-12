@@ -18,11 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-1. Set your API token for your service
+Set your API token for your service:
 
-    export API_TOKEN=your_api_token
+    $ export API_TOKEN=your_api_token
 
-2. Include in your controller
+Include in your controller
 
 ```ruby
 class ApplicationController < ActionController::Base
@@ -31,7 +31,7 @@ class ApplicationController < ActionController::Base
 end
 ```
 
-3. Add your API token to your request header on your client
+Add your API token to your request header on your client:
 
     $ curl --header "HTTP_X_API_TOKEN: your_api_token" api.yourservice.com
 
