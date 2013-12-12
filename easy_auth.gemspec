@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'easy_auth/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "easy_auth"
+  spec.name          = "ez_auth"
   spec.version       = EasyAuth::VERSION
   spec.authors       = ["Hubert Liu"]
   spec.email         = ["hubert.liu@rigor.com"]
