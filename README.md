@@ -18,14 +18,22 @@ Or install it yourself as:
 
 ## Usage
 
-    Include in your controller
+1. Set your API token for your service
 
-    ```ruby
-        class ApplicationController < ActionController::Base
-          include EasyAuth
-          before_filter :easy_authenticate!
-        end
-    ```
+    export API_TOKEN=your_api_token
+
+2. Include in your controller
+
+```ruby
+class ApplicationController < ActionController::Base
+  include EasyAuth
+  before_filter :easy_authenticate!
+end
+```
+
+3. Add your API token to your request header on your client
+
+    $ curl --header "HTTP_X_API_TOKEN: your_api_token" api.yourservice.com
 
 ## Contributing
 
