@@ -1,6 +1,6 @@
 # EasyAuth
 
-TODO: Write a gem description
+An easy(ish) way to use API tokens in your services
 
 ## Installation
 
