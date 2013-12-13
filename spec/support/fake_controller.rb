@@ -25,4 +25,8 @@ class FakeRequest
     {'HTTP_X_API_TOKEN' => token}
   end
 
+  def headers
+    {'HTTP_X_API_TOKEN' => token}
+  end
+
 end
