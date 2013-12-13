@@ -16,7 +16,7 @@ module EasyAuth
   end
 
   def request_auth_token
-    request.headers['HTTP_X_API_TOKEN'] || request.env['HTTP_X_API_TOKEN'] || params[:api_token]
+    request.headers.env['HTTP_X_API_TOKEN'] || request.env['HTTP_X_API_TOKEN'] || params[:api_token]
   end
 
   def authentication_token

@@ -13,19 +13,18 @@ class FakeController < ActionController::Base
 
 end
 
+class FakeHeaders < Struct.new(:env);end
+
 class FakeRequest
 
-  attr_accessor :token
+  attr_accessor :token, :headers
 
   def initialize token
     @token = token
+    @headers = FakeHeaders.new({'HTTP_X_API_TOKEN' => token})
   end
 
   def env
-    {'HTTP_X_API_TOKEN' => token}
-  end
-
-  def headers
     {'HTTP_X_API_TOKEN' => token}
   end
 

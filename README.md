@@ -33,7 +33,7 @@ end
 
 Add your API token to your request header on your client:
 
-    $ curl --header "HTTP_X_API_TOKEN: your_api_token" api.yourservice.com
+    $ curl --header "X_API_TOKEN: your_api_token" api.yourservice.com
 
 ## Contributing
 
