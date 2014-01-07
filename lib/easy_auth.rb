@@ -28,7 +28,8 @@ module EasyAuth
 
     [
       request.headers.env['HTTP_X_API_TOKEN'], 
-      request.env['HTTP_X_API_TOKEN']
+      request.env['HTTP_X_API_TOKEN'],
+      request.params[:api_token]
     ].include? ENV.fetch('API_TOKEN') { 'DEV_TOKEN' }
 
   end
