@@ -22,4 +22,15 @@ module EasyAuth
   def authentication_token
     ENV.fetch('API_TOKEN') { 'DEV_TOKEN' }
   end
+
+  def self.authenticated_request? request
+    # this is used as a convenience method to be able to use this in a routes.rb file.
+
+    [
+      request.headers.env['HTTP_X_API_TOKEN'], 
+      request.env['HTTP_X_API_TOKEN']
+    ].include? ENV.fetch('API_TOKEN') { 'DEV_TOKEN' }
+
+  end
+
 end
